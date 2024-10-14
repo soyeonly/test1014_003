@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTE MUSEUM</title>
+  <!--favicon-->
+  <link rel="icon" href="img/favicon_arte.ico">
+
+  <!--font-->
+  <link rel="stylesheet" href="css/font.css">  
+
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--js-->
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <script defer src="js/jquery.fullPage.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="js/main.js"></script>
+
+
+</head>
+<body>
+
+
+  <!-- 로딩화면 -->
+  <div id="loader-wrapper">
+    <div class="logo">
+      <div class="loader"></div>
+      <div class="loader-img"><img src="img/loading_logo.png" alt="Artemuseum"></div>
+    </div>
+  </div><!--#loader-wrapper-->
+
+
+  <!-- 검색창 -->
+  <div id="search-bar">
+    <div class="search">
+      <form>
+        <fieldset>
+          <legend>검색영역</legend>
+          <div>
+            <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요" autofocus>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="search-close"><img src="img/icon/search_close.png" alt="검색창닫기"></div>
+
+    </div><!--.search-->
+  </div><!--#search-bar-->
+
+
+  <!-- 티켓 구매 링크-->
+  <div class="ticket-btn">
+    <a href="https://tickets.interpark.com/contents/search?n_media=27758&n_ad_group=grp-a001-01-000000025867781&n_ad=nad-a001-01-000000241192744&n_rank=1&n_ad_group_type=1&n_match=1&NaPm=ct%3Dm18vg4a8%7Cci%3D0z00001cIYHAB9NFo1kW%7Ctr%3Dsa%7Chk%3Dd017468e638fc5d97e84cae53aff5aa17b3c5945%7Cnacn%3Dz3WyBMgZzeR5B&utm_campaign=ticket_leisure_20210617_pc_cpc_paidsearch&utm_term=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_source=naver&utm_medium=cpc&keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84&n_keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&n_campaign_type=1&n_query=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_content=consider_34&n_keyword_id=nkw-a001-01-000004482302227" target="_blank"><img src="img/icon/TICKET_fixed.png" alt="티켓구매하기"></a>
+  </div><!--.ticket-btn-->
+
+
+
+  <div id="wrap">
+
+     <!-- 헤더 -->
+     <header>
+      <div class="inner">
+        <h1><a href="index.html"><img src="img/icon/header_logo.png" alt="아르떼뮤지엄"></a></h1>
+
+        <nav>
+          <ul class="gnb">
+            <li><a href="#menu1">About</a></li>
+            <li><a href="#menu2">Exhibition</a></li>
+            <li><a href="#">Place</a>
+              <ul class="gnb-2depth">
+                <li><a href="sub/place_jeju.html">JEJU</a></li>
+                <li><a href="sub/place_yeosu.html">YEOUSU</a></li>
+                <li><a href="sub/place_gangneung.html">GANGNEUNG</a></li>
+                <li><a href="sub/place_busan.html">BUSAN</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Info</a>
+              <ul class="gnb-2depth">
+                <li><a href="sub/info_event.html">EVENT</a></li>
+                <li><a href="sub/info_faq.html">FAQ</a></li>
+              </ul>
+            </li>
+          </ul><!--.gnb-->
+
+          <div class="m-gnb-wrap">
+            <ul class="m-gnb">
+
+              <li><a href="#menu1">
+                <img src="img/icon/m_ham_hover.png" alt="아이콘">
+                <span>About</span>
+              </a></li>
+
+              <li><a href="#menu2">
+                <img src="img/icon/m_ham_hover.png" alt="아이콘">
+                <span>Exhibition</span>
+              </a></li>
+
+              <li><a href="#">
+                <img src="img/icon/m_ham_hover.png" alt="아이콘">
+                <span>Place</span>
+              </a>
+                <ul class="m-gnb-2depth">
+                  <li><a href="sub/place_jeju.html">JEJU</a></li>
+                  <li><a href="sub/place_yeosu.html">YEOUSU</a></li>
+                  <li><a href="sub/place_gangneung.html">GANGNEUNG</a></li>
+                  <li><a href="sub/place_busan.html">BUSAN</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">
+                <img src="img/icon/m_ham_hover.png" alt="아이콘">
+                <span>Info</span>
+              </a>
+                <ul class="m-gnb-2depth">
+                  <li><a href="sub/info_event.html">EVENT</a></li>
+                  <li><a href="sub/info_faq.html">FAQ</a></li>
+                </ul>
+              </li>
+            </ul><!--.m-gnb-->
+
+            <div class="m-logo">
+              <img src="img/icon/m_ham_logo.png" alt="아르떼뮤지엄">
+            </div>
+            <div class="m-gnb-close">
+              <img src="img/icon/m-gnb-close.png" alt="메뉴닫기">
+            </div>
+            
+         </div><!--.m-gnb-wrap -->
+
+
+        </nav>
+
+        <ul class="utill">
+          <li class="search-btn"><a href="#"><img src="img/icon/header_search_icon.png" alt="검색창 열기"></a></li>
+          <li class="globe-btn"><a href="#"><img src="img/icon/header_globe_icon.png" alt="영어 사이트"></a></li>
+          <li class="ham-btn"><a href="#"><img src="img/icon/m_ham_menu.png" alt="메뉴 열기"></a></li>
+        </ul><!--.utill-->
+      </div><!--.inner-->
+    </header>
+
+    <!-- 풀 페이지 -->
+    <div id="fullpage">
+
+      <!-- 1. 메인비쥬얼 -->
+      <section class="section" id="main-visual">
+
+        <!-- 메인 배너 -->
+        <div class="main-banner">
+
+          <video src="img/mv_1080p.mp4" id="mv-video" data-autoplay muted playsinline loop></video>
+
+
+          <div class="mv-txt">
+            <h2>EXTERNAL <br>NATURE</h2>
+            <img src="img/icon/mainvisual_vertical_icon.png" alt="icon">
+          </div>
+
+        </div><!--.main-banner-->
+
+          <div class="play-pause">
+            <img src="img/icon/mainvisual_play.png" class ="play" alt="영상재생하기">
+            <img src="img/icon/mainvisual_pause.png" class ="pause" alt="영상일시정지">
+          </div>
+
+      </section><!--#main-visual-->
+
+
+      <!-- 2. ABOUT -->
+      <section class="section" id="about" data-anchor="meun1"> 
+        <div class="about-pc-wrap">
+          <div class="inner">
+
+            <div class="content">
+   
+             <div class="about-left">
+               <div class="about-txt">
+                 <img src="img/about_logo.png" alt="아르떼뮤지엄">
+                 <div></div>
+                 <p>아르떼뮤지엄(ARTE MUSEUM)은 세계 수준의 디지털 디자인 컴퍼니 <br>
+                   디스트릭트(d'strict)가 선보이는 몰입형 미디어아트 전시관입니다.<br>
+                   디스트릭트는 2020년 9월말 제주 애월에서 첫 아르떼뮤지엄을 선보인 이후 <br>
+                   영원한 자연(ETERNAL NATURE)이라는 주제 하에 
+                   새로운 전시 작품들을 <br> 제작하며 아르떼 뮤지엄을 국내외 각 지역으로 확산하고 있습니다.<br>
+                   각 지역별 자연과 문화 유산을 활용해 <br>
+                   차별화된 컨셉과 작품들로 구성된 다양한 아르떼 뮤지엄을 방문해보세요.</p>
+               </div>
+             </div><!--.about-left-->
+   
+             <div class="about-right">
+               <div class="right-top">이미지1</div>
+               <div class="right-bottom">
+                 <div>이미지2</div>
+                 <div>이미지3</div>
+               </div>
+             </div><!--.about-right-->
+   
+            </div><!--.content-->
+           </div><!--.inner-->
+   
+           <!--꾸밈요소-->
+           <div class="L-artemuseum">
+             <img src="img/icon/about_icon.png" alt="아이콘">
+             <div class="line"></div>
+             <h2>ARTE MUSEUM</h2>
+           </div><!--.L-artemuseum-->
+   
+           <div class="R-about">
+             <h2>ABOUT</h2>
+             <div class="line"></div>
+             <img src="img/icon/about_icon.png" alt="아이콘">
+           </div><!--.R-about-->
+        </div><!--.about-pc-wrap-->
+
+        <div class="about-m-wrap">
+          <div class="about-m-top">
+            <img src="img/icon/about_icon.png" alt="아이콘">
+            <h2>ABOUT</h2>
+            <div class="line"></div>
+          </div><!--.about-m-top-->
+
+          <div class="m-about-txt">
+            <img src="img/about_logo.png" alt="아르떼뮤지엄">
+            <div></div>
+            <p>아르떼뮤지엄(ARTE MUSEUM)은 <br>
+              세계 수준의 디지털 디자인 컴퍼니 디스트릭트(d'strict)가 선보이는 <br>
+              몰입형 미디어아트 전시관입니다. <br>
+              디스트릭트는 2020년 9월말 제주 애월에서 첫 아르떼뮤지엄을 선보인 이후 <br>
+              영원한 자연(ETERNAL NATURE)이라는 주제 하에 <br>
+              새로운 전시 작품들을 제작하며 아르떼 뮤지엄을 <br>
+              국내외 각 지역으로 확산하고 있습니다.<br>
+              각 지역별 자연과 문화 유산을 활용해 <br>
+              차별화된 컨셉과 작품들로 구성된 다양한 아르떼 뮤지엄을 방문해보세요.</p>
+          </div>
+
+          <div class="about-m-bottom">
+            <h2>ARTE MUSEUM</h2>
+            <div class="line"></div>
+          </div>
+
+          
+
+        </div><!--.about-m-wrap-->
+
+      </section><!-- #about -->
+
+
+      <!-- 3. EXHIBITION -->
+      <section class="section" id="exhibition" data-anchor="menu2">
+
+        <h2>EXHIBITION</h2>
+
+        <div class="swiper exh">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide s1">
+              <div class="ex-txt">
+                <h3>시간의 흐름에 따라 변화하는 고흐의 장미</h3>
+                <p class="kor">
+                  안료의 색이 분홍색에서 흰색으로 변해가는 세월을 담아, <br>
+                  분홍색 장미가 흰색 장미로 변해가는 과정을 표현한 작품이다.</p>
+                <p class="eng">
+                  THE ROSE OF VAN GOGH TRANSFORMING THROUGH <br> THE FLOW OF TIME
+                  <br>
+                  Take a journey through the process of pink roses <br> transforming into white ones over time as the pink <br> pigment changes to white.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide s2">
+              <div class="ex-txt">
+                <h3>은하수를 따라 떠나는 여행</h3>
+                <p class="kor">
+                  별빛의 흐름에 따라 시작된 여정은 <br>공간을 가득 채운 아름다운 볓빛 우주를 지나, <br>그 끝에서 놀라운 우주의 신비를 마주하게 된다.
+                  </p>
+                <p class="eng">
+                  A JOURNEY ALONG THE MINKY WAY. <br>Started with the flow of starlights, through the <br>space full of beautiful stars, <br>the journey presents you with astonishing secrets of the universe.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+          
+
+            <div class="swiper-slide s3">
+              <div class="ex-txt">
+                <h3>ARTE MUSEUM X 조선회화</h3>
+                <p class="kor">조선회화의 대표작과 아르떼뮤지엄이 현대적으로 <br> 재창조한 작품 속을 거닐며, 당대의 사유에 잠겨본다.</p>
+                <p class="eng">
+                  ARTE MUSEUM X JOSEON PAINTING <br>
+                  Explore ARTE MUSEUM's modern adaptation of Joseon <br>Dynasty paintings. Immerse yourself in a stroll <br> through the thoughts and emotions of the time.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide s4">
+              <div class="ex-txt">
+                <h3>생명을 얻어 변화하는 미지의 동굴</h3>
+                <p class="kor">끝을 알 수 없는 미지의 동굴이 생명력을 얻어 <br>끊임없이 변화한다. 바위 동굴에서 숲의 동굴을 거쳐 초현실 공간으로 <br> 이어지는 여정은 공간을 초월하는 새로운 세상을 경험케 한다.</p>
+                <p class="eng">
+                  MYSTERIOUS CAVE THAT CHANGES WITH LIFE <br>
+                  A seemingly endless cave of mystery constantly <br>transfiguring upon a new cycle of life. Experience the transcendental journey <br> from a rock cave to a forest cave and, eventually, <br> the surreal world that goes beyond space.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide s5">
+              <div class="ex-txt">
+                <h3>아름다운 정령이 살아 숨 쉬는 신성한 숲</h3>
+                <p class="kor">누구의 손도 닿지 않은 신성한 숲에서 신비로운 정령을 만난다. <br> 수(水)·풍(風)·지(地)·화(火)를 상징하는 <br>정령들은 숲을 거닐며 치유와 회복의 기운을 선사한다.
+                </p>
+                <p class="eng">
+                  SACRED FOREST OF MYSTIC SPIRITS <br>
+                  Meet the mystical spirits living in this sacred and  <br>untouched forest. Stroll through the land of healing and restoration,  <br>protected by the spirits of water, wind, earth, and fire.
+
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide s6">
+              <div class="ex-txt">
+                <h3>달빛을 머금은 달토끼와의 만남</h3>
+                <p class="kor">시간의 흐름에 따라 변화하는 고흐의 장미. <br>
+                  안료의 색이 분홍색에서 흰색으로 변해가는 세월을 담아, <br>
+                  분홍색 장미가 흰색 장미로 변해가는 과정을 표현한 작품이다.</p>
+                <p class="eng">
+                  THE ROSE OF VAN GOGH TRANSFORMING THROUGH <br> THE FLOW OF TIME
+                  <br>
+                  Take a journey through the process of pink roses <br> transforming into white ones over time as the pink <br> pigment changes to white.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+          
+
+            <div class="swiper-slide s7">
+              <div class="ex-txt">
+                <h3>오션, 여수가 꿈꾸는 바다</h3>
+                <p class="kor">거대한 고래와 신비로운 바다 생명체가 만들어내는 아름다운 장관 <br>
+                  여수의 바다와 절경을 오롯이 담아낸 꿈에 그리던 
+                  <br>환상적인 바다여행을 시작한다.</p>
+                <p class="eng">
+                  OCEAN, YEOSU'S DREAM <br>
+                  A beautiful spectacle created by giant whales <br> and mysterious sea creatures.<br>
+                  The fantastic sea journey you’ve always dreamed <br>of begins with beautiful Yeosu’s sea and superb view.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide s8">
+              <div class="ex-txt">
+                <h3>불꽃이 베일을 벗긴 로맨틱 모멘트</h3>
+                <p class="kor">구름과 대지 사이로 내리친 번개는 미지의 공간을 밝힌다. <br>핑크빛 구름과 다채로운 컬러의 생명체들이 <br>어우러진 몽환적인 세상이 펼쳐진다.</p>
+                <p class="eng">
+                  A ROMANTIC MOMENT UNVEILED BY FIREWORKS <br>
+
+                When lightning strikes from the clouds to the earth, <br>it illuminates a mysterious world unknown. <br>A surreal landscape unfolds, where pink clouds intermingle <br>with colorful creatures in a seamless symphony.
+                </p>
+              </div>
+            </div><!--.swiper-slide-->
+
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+
+
+      </section><!-- #exhibition -->
+      
+
+      <!-- 4. NOTICE -->
+      <section class="section" id="notice" data-anchor="meun3">
+
+        <div class="notice-tit">
+          <div class="L-tit">
+            <h2>Sensory Sounds</h2>
+            <h2>Sophisticated Scents</h2>
+            <h2>The feel of Nature</h2>
+          </div>
+          <div class="R-tit">
+            <img src="img/icon/about_icon.png" alt="아이콘">
+            <div class="r-line"></div>
+          </div>
+        </div><!--.notice-tit-->
+
+
+        <div class="s-notice-wrap">
+        <!--공지 스와이퍼 슬라이드-->
+        <div class="swiper s-notice">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="notice-num">
+                <div class="num-img"><img src="img/notice_01.jpg" alt="notice"></div>
+                <h3>01</h3>
+              </div><!--.notice-num-->
+
+              <div class="notice-txt">
+                <span>JEJU</span>
+                <p>달 토끼야 내 소원은, 
+                  아르떼뮤지엄X디아넥스가 함께하는 추석맞이 댓글이벤트!</p>
+              </div><!--.notice-txt-->
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide">
+              <div class="notice-num">
+                <div class="num-img"><img src="img/notice_02.jpg" alt="notice"></div>
+                <h3>02</h3>
+              </div><!--.notice-num-->
+
+              <div class="notice-txt">
+                <span>BUSAN</span>
+                <p>다가오는 추석을 맞아, 다양한 취향이 담긴‘웜그레이테일’의 GIFT CURATION을 만나보세요.</p>
+              </div><!--.notice-txt-->
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide">
+              <div class="notice-num">
+                <div class="num-img"><img src="img/notice_03.jpg" alt="notice"></div>
+                <h3>03</h3>
+              </div><!--.notice-num-->
+
+              <div class="notice-txt">
+                <span>JEJU</span>
+                <p>여름맞이 제주도민 할인 이벤트!! 무더운 여름, 제주도민을 위한 특별한 혜택! 아르떼뮤지엄 입장료 5,000원</p>
+              </div><!--.notice-txt-->
+            </div><!--.swiper-slide-->
+
+
+            <div class="swiper-slide">
+              <div class="notice-num">
+                <div class="num-img"><img src="img/notice_04.jpg" alt="notice"></div>
+                <h3>04</h3>
+              </div><!--.notice-num-->
+
+              <div class="notice-txt">
+                <span>BUSAN</span>
+                <p>아르떼뮤지엄 부산 그랜드 오프닝을 기념해 아르떼 카페와 아르떼 샵에서 50% 할인 행사를 진행합니다.</p>
+              </div><!--.notice-txt-->
+            </div><!--.swiper-slide-->
+
+
+            <div class="swiper-slide">
+              <div class="notice-num">
+                <div class="num-img"><img src="img/notice_05.jpg" alt="notice"></div>
+                <h3>05</h3>
+              </div><!--.notice-num-->
+
+              <div class="notice-txt">
+                <span>GANGNEUNG</span>
+                <p>ARTE MUSEUM X MUSEE D'ORSAY,
+                  아르떼뮤지엄이 오르세 미술관을 담아 새롭게 창작한 이머시브 미디어아트!</p>
+              </div><!--.notice-txt-->
+            </div><!--.swiper-slide-->
+
+            <div class="swiper-slide">
+              <div class="notice-num">
+                <div class="num-img"><img src="img/notice_06.jpg" alt="notice"></div>
+                <h3>06</h3>
+              </div><!--.notice-num-->
+
+              <div class="notice-txt">
+                <span>YEOSU</span>
+                <p>ARTE MUSEUM X 조선회화
+                  조선회화의 대표작과 아르떼뮤지엄이 현대적으로 재창조한 작품 속을 거닐며, 당대의 사유에 잠겨본다.</p>
+              </div><!--.notice-txt-->
+            </div><!--.swiper-slide-->
+            
+          </div><!--.swiper-wrapper-->
+        </div><!--.s-notice-->
+
+        <div class="s-notice-control">
+          <div class="swiper-button-next">
+            <img src="img/icon/notice_next.png" alt="다음페이지">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="img/icon/notice_prev.png" alt="이전페이지">
+          </div>
+        </div>
+        
+      </div>
+
+
+      </section><!--#notice-->
+
+      <!-- 5. INFO -->
+      <section class="section" id="info" data-anchor="meun4">
+
+        <div class="bg-video">
+          <video src="img/info_bg.mp4" data-autoplay muted loop playsinline></video>
+        </div>
+
+
+        <div class="inner">
+          <h2>INFO</h2>
+
+          <div class="info-wrap">
+            <div class="L-info">
+
+              <div class="info-table">
+                <table>
+                  <caption>관람요금</caption>
+  
+                  <thead>
+                    <tr>
+                      <th>대상</th>
+                      <th>전시티켓<p>(전시입장)</p></th>
+                      <th>패키지티켓<p>(전시입장 > TEA 1잔)</p></th>
+                    </tr>
+                  </thead>
+  
+                  <tbody>
+                    <tr>
+                      <td>성인</td>
+                      <td>17,000</td>
+                      <td>19,000</td>
+                    </tr>
+                    <tr>
+                      <td>청소년</td>
+                      <td>13,000</td>
+                      <td>15,000</td>
+                    </tr>
+                    <tr>
+                      <td>어린이</td>
+                      <td>10,000</td>
+                      <td>12,000</td>
+                    </tr>
+                    <tr>
+                      <td>할인요금</td>
+                      <td>8,000</td>
+                      <td>10,000</td>
+                    </tr>
+                    <tr>
+                      <td>유아</td>
+                      <td colspan="2">무료</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!--.info-table-->
+  
+              <div class="info-utill">
+  
+                <ul>
+                  <li>
+                    <a href="sub/place_jeju.html">
+                      <div><img src="img/icon/info_location.png" alt="전시장안내"></div>
+                      <p>전시장 안내</p>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="https://tickets.interpark.com/contents/search?n_media=27758&n_ad_group=grp-a001-01-000000025867781&n_ad=nad-a001-01-000000241192744&n_rank=1&n_ad_group_type=1&n_match=1&NaPm=ct%3Dm18vg4a8%7Cci%3D0z00001cIYHAB9NFo1kW%7Ctr%3Dsa%7Chk%3Dd017468e638fc5d97e84cae53aff5aa17b3c5945%7Cnacn%3Dz3WyBMgZzeR5B&utm_campaign=ticket_leisure_20210617_pc_cpc_paidsearch&utm_term=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_source=naver&utm_medium=cpc&keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84&n_keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&n_campaign_type=1&n_query=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_content=consider_34&n_keyword_id=nkw-a001-01-000004482302227">
+                      <div><img src="img/icon/info_ticket.png" alt="티켓구매"></div>
+                      <p>티켓 구매</p>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="sub/info_faq.html">
+                      <div><img src="img/icon/info_faq.png" alt="문의하기"></div>
+                      <p>문의하기</p>
+                    </a>
+                  </li>
+                </ul>
+  
+              </div><!--.info-utill-->
+  
+  
+            </div><!--.L-info-->
+  
+            <div class="R-info">
+              <div class="info-txt">
+                <h4>관람시간</h4>
+                <p>연중무휴 10:00 - 20:00 <br>
+                  (입장 마감 19:00)
+                </p>
+  
+                <h4>유의사항</h4>
+                <p>
+                  아동(2018년~2020년생), 경로(1960년 이전 출생), 장애인, <br> 유공자, 군인(의무복무자에 한함)
+                </p>
+                
+                <p>
+                  할인 요금 대상자는 본인만 할인 요금이 적용 <br>
+                (동반자는 할인 적용 불가/중복 할인 불가)
+                </p>
+                
+                <p>
+                  전시 티켓만 구입후 ARTE TEA BAR 이용을 원하실 경우 <br>
+                  TEA 1잔 당 3,000원의 별도 이용료 발생
+                </p>
+  
+                <p>
+                  20인 이상 단체는 각 요금에서 2,000원 할인
+                </p>
+  
+                <p>
+                  지역주민은 각 요금에서 2,000원 할인(중복 할인 불가)
+                </p>
+  
+                <p>
+                  지역주민 할인요금 대상자 <br>
+                  현장에서 구매 가능하며, <br>
+                  신분증/증빙서류 미지참 시 혜택 적용 불가 <br>
+                  중복 할인 불가
+                </p>
+  
+  
+              </div>
+            </div><!--.R-info-->
+          </div><!--.info-wrap-->
+
+
+        </div><!--.inner-->
+      </section><!--#info-->
+
+
+      <!-- 푸터 -->
+      <footer class="section fp-auto-height" data-anchor="meun5">
+        <div class="inner">
+          <div class="foot-logo-wrap">
+            <img src="img/icon/footer_logo.png" alt="아르떼뮤지엄" class="foot-logo">
+          </div>
+
+          <div class="foot-info">
+            <span><a href="#">개인정보처리방침</a></span>
+            <span><a href="#">영상처리기기운영방침</a></span>
+
+            <address>
+              주관, 제작 | district company &nbsp;&nbsp;&nbsp;    
+              후원 | 문화체육관광부  한국콘텐츠진흥원 <br>
+              Contact | artemuseum@district.com &nbsp;&nbsp;&nbsp; 사업자 번호 | 395-88-02020
+            </address>
+
+            <p>Copyright ⓒ 2024 Artemuseum  ALL rights reserved.</p>
+
+          </div><!--.foot-info-->
+
+          <div class="sns">
+            <a href="https://www.facebook.com/ARTEMUSEUM.KOREA" target="_blank"><img src="img/icon/footer_facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/artemuseum_jeju/?hl=ko" target="_blank"><img src="img/icon/footer_insta.png" alt="인스타"></a>
+            <a href="https://pf.kakao.com/_LZHVK" target="_blank"><img src="img/icon/footer_kakaotalk.png" alt="카카오톡"></a>
+          </div><!--.sns-->
+        </div><!--.inner-->
+      
+      </footer>
+        
+
+
+
+
+    </div><!--#fullpage-->
+
+  </div><!--#wrap-->
+
+
+
+
+
+
+</body>
+</html>

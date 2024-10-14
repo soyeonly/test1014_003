@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENT</title>
+    <!--favicon-->
+    <link rel="icon" href="../img/favicon_arte.ico">
+
+    <!--font-->
+    <link rel="stylesheet" href="../css/font.css">  
+  
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage.../css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/common_sub.css">
+    <link rel="stylesheet" href="../css/info_event.css">
+  
+    <!--js-->
+    <script defer src="../js/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery.fullPage.js"></script>
+    <script defer src="../js/swiper-bundle.min.js"></script>
+    <script defer src="../js/common.js"></script>
+    
+</head>
+<body>
+
+    <!-- 검색창 -->
+    <div id="search-bar">
+      <div class="search">
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div>
+              <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요" autofocus>
+            </div>
+          </fieldset>
+        </form>
+  
+        <div class="search-close"><img src="../img/icon/search_close.png" alt="검색창닫기"></div>
+  
+      </div><!--.search-->
+    </div><!--#search-bar-->
+  
+  
+    <!-- 티켓 구매 링크-->
+    <div class="ticket-btn">
+      <a href="https://tickets.interpark.com/contents/search?n_media=27758&n_ad_group=grp-a001-01-000000025867781&n_ad=nad-a001-01-000000241192744&n_rank=1&n_ad_group_type=1&n_match=1&NaPm=ct%3Dm18vg4a8%7Cci%3D0z00001cIYHAB9NFo1kW%7Ctr%3Dsa%7Chk%3Dd017468e638fc5d97e84cae53aff5aa17b3c5945%7Cnacn%3Dz3WyBMgZzeR5B&utm_campaign=ticket_leisure_20210617_pc_cpc_paidsearch&utm_term=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_source=naver&utm_medium=cpc&keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84&n_keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&n_campaign_type=1&n_query=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_content=consider_34&n_keyword_id=nkw-a001-01-000004482302227" target="_blank"><img src="../img/icon/TICKET_fixed.png" alt="티켓구매하기"></a>
+    </div><!--.ticket-btn-->
+
+
+
+    <div id="wrap">
+      <!-- 헤더 -->
+      <header>
+        <div class="inner">
+          <h1><a href="../index.html"><img src="../img/sub_header_icon/sub_logo.png" alt="아르떼뮤지엄"></a></h1>
+  
+          <nav>
+            <ul class="gnb">
+              <li><a href="../index.html#menu1">About</a></li>
+              <li><a href="../index.html#menu2">Exhibition</a></li>
+              <li><a href="#">Place</a>
+                <ul class="gnb-2depth">
+                  <li><a href="../sub/place_jeju.html">JEJU</a></li>
+                  <li><a href="../sub/place_yeosu.html">YEOUSU</a></li>
+                  <li><a href="../sub/place_gangneung.html">GANGNEUNG</a></li>
+                  <li><a href="../sub/place_busan.html">BUSAN</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Info</a>
+                <ul class="gnb-2depth">
+                  <li><a href="../sub/info_event.html">EVENT</a></li>
+                  <li><a href="../sub/info_faq.html">FAQ</a></li>
+                </ul>
+              </li>
+            </ul><!--.gnb-->
+  
+            <div class="m-gnb-wrap">
+              <ul class="m-gnb">
+  
+                <li><a href="../index.html#menu1">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>About</span>
+                </a></li>
+  
+                <li><a href="../index.html#menu2">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Exhibition</span>
+                </a></li>
+  
+                <li><a href="#">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Place</span>
+                </a>
+                  <ul class="m-gnb-2depth">
+                    <li><a href="../sub/place_jeju.html">JEJU</a></li>
+                    <li><a href="../sub/place_yeosu.html">YEOUSU</a></li>
+                    <li><a href="../sub/place_gangneung.html">GANGNEUNG</a></li>
+                    <li><a href="../sub/place_busan.html">BUSAN</a></li>
+                  </ul>
+                </li>
+  
+                <li><a href="#">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Info</span>
+                </a>
+                  <ul class="m-gnb-2depth">
+                    <li><a href="../sub/info_event.html">EVENT</a></li>
+                    <li><a href="../sub/info_faq.html">FAQ</a></li>
+                  </ul>
+                </li>
+              </ul><!--.m-gnb-->
+  
+              <div class="m-logo">
+                <img src="../img/icon/m_ham_logo.png" alt="아르떼뮤지엄">
+              </div>
+              <div class="m-gnb-close">
+                <img src="../img/icon/m-gnb-close.png" alt="메뉴닫기">
+              </div>
+              
+           </div><!--.m-gnb-wrap -->
+  
+  
+          </nav>
+  
+          <ul class="utill">
+            <li class="search-btn"><a href="#"><img src="../img/sub_header_icon/sub_search.png" alt="검색창 열기"></a></li>
+            <li class="globe-btn"><a href="#"><img src="../img/sub_header_icon/sub_globe.png" alt="영어 사이트"></a></li>
+            <li class="ham-btn"><a href="#"><img src="../img/sub_header_icon/sub_ham_menu.png" alt="메뉴 열기"></a></li>
+          </ul><!--.utill-->
+        </div><!--.inner-->
+      </header>
+
+      <!-- 타이틀 영역 -->
+      <div id="tit">
+        <div class="inner">
+          <h2>EVENT</h2>
+        </div><!--.inner-->
+      </div><!--#tit-->
+
+
+
+      <!-- 이벤트 리스트 -->
+      <div id="event-list">
+        <div class="inner">
+          <ul class="event">
+
+            <li>
+              <div class="event-img">
+                <img src="../img/sub_event/event_01.jpg" alt="이벤트1">
+              </div><!--.event-img-->
+  
+              <div class="event-txt">
+                <a href="#">
+                  <span>24.09.12 - 24.09.18</span>
+                  <p>달 토끼야 내 소원은, <br>
+                    아르떼뮤지엄X디아넥스가 함께하는 추석맞이 댓글이벤트!</p>
+                </a>
+              </div><!--.event-txt-->
+            </li>
+  
+            <li>
+              <div class="event-img">
+                <img src="../img/sub_event/event_02.jpg" alt="이벤트2">
+              </div><!--.event-img-->
+  
+              <div class="event-txt">
+                <a href="#">
+                  <span>24.09.01 - 24.09.30</span>
+                  <p>ARTE CURATION - WARMGREYTAIL, <br>
+                    아르떼뮤지엄 MD SHOP에서는 감도 높은 브랜드의 큐레이션 상품을 제안합니다!</p>
+                </a>
+              </div><!--.event-txt-->
+            </li>
+  
+            <li>
+              <div class="event-img">
+                <img src="../img/sub_event/event_03.jpg" alt="이벤트3">
+              </div><!--.event-img-->
+  
+              <div class="event-txt">
+                <a href="#">
+                  <span>상시진행중</span>
+                  <p>ARTE MUSEUM X MUSEE D'ORSAY,<br>
+                    아르떼뮤지엄이 오르세 미술관을 담아 새롭게 창작한 이머시브 미디어아트!</p>
+                </a>
+              </div><!--.event-txt-->
+            </li>
+  
+            <li>
+              <div class="event-img">
+                <img src="../img/sub_event/event_04.jpg" alt="이벤트4">
+              </div><!--.event-img-->
+  
+              <div class="event-txt">
+                <a href="#">
+                  <span>24.07.29 - 24.08.18</span>
+                  <p>여름맞이 제주도민 할인 이벤트, <br>
+                    무더운 여름, 제주도민을 위한 특별한 혜택!</p>
+                </a>
+              </div><!--.event-txt-->
+            </li>
+  
+            <li>
+              <div class="event-img">
+                <img src="../img/sub_event/event_05.jpg" alt="이벤트5">
+              </div><!--.event-img-->
+  
+              <div class="event-txt">
+                <a href="#">
+                  <span>24.07.18 - 24.07.31</span>
+                  <p>아르떼뮤지엄 부산 그랜드 오프닝을 기념해 아르떼 카페와 아르떼 샵에서 50% 할인 행사를 진행합니다!</p>
+                </a>
+              </div><!--.event-txt-->
+            </li>
+  
+            <li>
+              <div class="event-img">
+                <img src="../img/sub_event/event_06.jpg" alt="이벤트6">
+              </div><!--.event-img-->
+  
+              <div class="event-txt">
+                <a href="#">
+                  <span>24.06.01 - 24.06.30</span>
+                  <p>아르떼뮤지엄 X 여행가는달, <br>
+                    다가오는 6월 여행가는 달에서만 제공하는 특별 할인 혜택!</p>
+                </a>
+              </div><!--.event-txt-->
+            </li>
+
+          </ul>
+
+
+
+          <!--페이지 박스-->
+          <div class="pagebox">
+            <ul class="page">
+              <li><a href="#">처음페이지로</a></li>
+              <li><a href="#">이전페이지로</a></li>
+              <li class="on"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">다음페이지로</a></li>
+              <li><a href="#">마지막페이지로</a></li>
+            </ul>
+          </div>
+
+
+        </div><!--.inner-->
+
+      </div><!-- #event-list -->
+    
+
+
+
+      <!-- 푸터 -->
+      <footer>
+        <div class="inner">
+          <div class="foot-logo-wrap">
+            <img src="../img/icon/footer_logo.png" alt="아르떼뮤지엄" class="foot-logo">
+          </div>
+
+          <div class="foot-info">
+            <span><a href="#">개인정보처리방침</a></span>
+            <span><a href="#">영상처리기기운영방침</a></span>
+
+            <address>
+              주관, 제작 | district company &nbsp;&nbsp;&nbsp;    
+              후원 | 문화체육관광부  한국콘텐츠진흥원 <br>
+              Contact | artemuseum@district.com &nbsp;&nbsp;&nbsp; 사업자 번호 | 395-88-02020
+            </address>
+
+            <p>Copyright ⓒ 2024 Artemuseum  ALL rights reserved.</p>
+
+          </div><!--.foot-info-->
+
+          <div class="sns">
+            <a href="https://www.facebook.com/ARTEMUSEUM.KOREA" target="_blank"><img src="../img/icon/footer_facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/artemuseum_jeju/?hl=ko" target="_blank"><img src="../img/icon/footer_insta.png" alt="인스타"></a>
+            <a href="https://pf.kakao.com/_LZHVK" target="_blank"><img src="../img/icon/footer_kakaotalk.png" alt="카카오톡"></a>
+          </div><!--.sns-->
+        </div><!--.inner-->
+      
+      </footer>
+
+
+    </div><!--#wrap-->
+
+  
+</body>
+</html>

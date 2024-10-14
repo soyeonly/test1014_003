@@ -1,0 +1,179 @@
+
+@charset "utf-8";
+
+
+/*-----------질문 리스트--------------- */
+#faq{
+  margin-bottom: 120px;
+}
+#faq .inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 5%;
+  flex-wrap: wrap;
+}
+#faq h2{
+  font-size: 10rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+.q-list{
+  width: 70%;
+  font-family: "Noto Sans KR", sans-serif;;
+}
+
+.q-list .q-tit{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #000;
+}
+.q-list .q-tit h3{
+  font-size: 3.5rem;
+}
+.q-list .q-tit a{
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  font-size: 2rem;
+
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.q-list .q-tit a:hover{
+  color: #000;
+  background-color: transparent;
+}
+
+
+
+
+
+.q-list .question p{
+  padding: 30px 10px;
+  font-size: 2rem;
+  border-bottom: 1px solid #000;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: font-weight 0.5s;
+}
+.q-list .question p:hover{
+  font-weight: 700;
+}
+
+
+
+
+/*-----------페이지 박스 --------------- */
+
+.pagebox{
+  padding-top: 40px;
+  
+}
+.page{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.page li{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.page li a{
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+
+  transition: color 0.3s;
+}
+.page li.on a{
+  color: #000;
+  font-weight: 700;
+}
+
+.page li:hover a{
+  color: #000;
+}
+
+
+.page li:nth-child(1){
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background: url(../img/sub_event/double_left.png) no-repeat center;
+}
+.page li:nth-child(2){
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background: url(../img/sub_event/left.png) no-repeat center;
+}
+.page li:nth-child(8){
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background: url(../img/sub_event/right.png) no-repeat center;
+}
+.page li:nth-child(9){
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background: url(../img/sub_event/double_right.png) no-repeat center;
+}
+
+
+/* 모바일 */
+@media screen and (max-width : 1080px) {
+  #faq .inner h2{
+    text-align: center;
+    width: 100%;
+    margin-top: -80px;
+  }
+  .q-list{
+    margin-top: 120px;
+    width: 100%;
+  }
+  .q-list .q-tit a{
+    width: 140px;
+    height: 45px;
+    font-size: 1.8rem;
+  }
+
+  .q-list .q-tit h3{
+    font-size: 3rem;
+  }
+
+  .q-list .question p{
+    padding: 25px 10px;
+    font-size: 1.8rem;
+  }
+
+
+
+
+  .page li a{
+    font-size: 1.4rem;
+  }
+  .page li:nth-child(1) a,
+  .page li:nth-child(2) a,
+  .page li:nth-child(8) a,
+  .page li:nth-child(9) a{
+    color: transparent;
+    font-size: 0;
+  }
+}

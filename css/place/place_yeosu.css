@@ -1,0 +1,27 @@
+#exh-list ul li:nth-child(1){
+  background: url(../../img/sub_place/yeosu/yeosu_01.jpg) no-repeat center / cover;
+}
+#exh-list ul li:nth-child(2){
+  background: url(../../img/sub_place/yeosu/yeosu_02.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(3){
+  background: url(../../img/sub_place/yeosu/yeosu_03.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(4){
+  background: url(../../img/sub_place/yeosu/yeosu_04.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(5){
+  background: url(../../img/sub_place/yeosu/yeosu_05.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(6){
+  background: url(../../img/sub_place/yeosu/yeosu_06.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(7){
+  background: url(../../img/sub_place/yeosu/yeosu_07.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(8){
+  background: url(../../img/sub_place/yeosu/yeosu_08.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(9){
+  background: url(../../img/sub_place/yeosu/yeosu_09.jpg)no-repeat center / cover;
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEJU</title>
+    <!--favicon-->
+    <link rel="icon" href="../img/favicon_arte.ico">
+
+    <!--font-->
+    <link rel="stylesheet" href="../css/font.css">  
+  
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage.../css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/common_sub.css">
+    <link rel="stylesheet" href="../css/place/place_jeju.css">
+  
+    <!--js-->
+    <script defer src="../js/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery.fullPage.js"></script>
+    <script defer src="../js/swiper-bundle.min.js"></script>
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/marquee.js"></script>
+  
+</head>
+<body>
+
+    <!-- 검색창 -->
+    <div id="search-bar">
+      <div class="search">
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div>
+              <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요" autofocus>
+            </div>
+          </fieldset>
+        </form>
+  
+        <div class="search-close"><img src="../img/icon/search_close.png" alt="검색창닫기"></div>
+  
+      </div><!--.search-->
+    </div><!--#search-bar-->
+  
+  
+    <!-- 티켓 구매 링크-->
+    <div class="ticket-btn">
+      <a href="https://tickets.interpark.com/contents/search?n_media=27758&n_ad_group=grp-a001-01-000000025867781&n_ad=nad-a001-01-000000241192744&n_rank=1&n_ad_group_type=1&n_match=1&NaPm=ct%3Dm18vg4a8%7Cci%3D0z00001cIYHAB9NFo1kW%7Ctr%3Dsa%7Chk%3Dd017468e638fc5d97e84cae53aff5aa17b3c5945%7Cnacn%3Dz3WyBMgZzeR5B&utm_campaign=ticket_leisure_20210617_pc_cpc_paidsearch&utm_term=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_source=naver&utm_medium=cpc&keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84&n_keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&n_campaign_type=1&n_query=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_content=consider_34&n_keyword_id=nkw-a001-01-000004482302227" target="_blank"><img src="../img/icon/TICKET_fixed.png" alt="티켓구매하기"></a>
+    </div><!--.ticket-btn-->
+
+
+
+    <div id="wrap">
+      <!-- 헤더 -->
+      <header>
+        <div class="inner">
+          <h1><a href="../index.html"><img src="../img/sub_header_icon/sub_logo.png" alt="아르떼뮤지엄"></a></h1>
+  
+          <nav>
+            <ul class="gnb">
+              <li><a href="../index.html#menu1">About</a></li>
+              <li><a href="../index.html#menu2">Exhibition</a></li>
+              <li><a href="#">Place</a>
+                <ul class="gnb-2depth">
+                  <li><a href="../sub/place_jeju.html">JEJU</a></li>
+                  <li><a href="../sub/place_yeosu.html">YEOUSU</a></li>
+                  <li><a href="../sub/place_gangneung.html">GANGNEUNG</a></li>
+                  <li><a href="../sub/place_busan.html">BUSAN</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Info</a>
+                <ul class="gnb-2depth">
+                  <li><a href="../sub/info_event.html">EVENT</a></li>
+                  <li><a href="../sub/info_faq.html">FAQ</a></li>
+                </ul>
+              </li>
+            </ul><!--.gnb-->
+  
+            <div class="m-gnb-wrap">
+              <ul class="m-gnb">
+  
+                <li><a href="../index.html#menu1">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>About</span>
+                </a></li>
+  
+                <li><a href="../index.html#menu2">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Exhibition</span>
+                </a></li>
+  
+                <li><a href="#">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Place</span>
+                </a>
+                  <ul class="m-gnb-2depth">
+                    <li><a href="../sub/place_jeju.html">JEJU</a></li>
+                    <li><a href="../sub/place_yeosu.html">YEOUSU</a></li>
+                    <li><a href="../sub/place_gangneung.html">GANGNEUNG</a></li>
+                    <li><a href="../sub/place_busan.html">BUSAN</a></li>
+                  </ul>
+                </li>
+  
+                <li><a href="#">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Info</span>
+                </a>
+                  <ul class="m-gnb-2depth">
+                    <li><a href="../sub/info_event.html">EVENT</a></li>
+                    <li><a href="../sub/info_faq.html">FAQ</a></li>
+                  </ul>
+                </li>
+              </ul><!--.m-gnb-->
+  
+              <div class="m-logo">
+                <img src="../img/icon/m_ham_logo.png" alt="아르떼뮤지엄">
+              </div>
+              <div class="m-gnb-close">
+                <img src="../img/icon/m-gnb-close.png" alt="메뉴닫기">
+              </div>
+              
+           </div><!--.m-gnb-wrap -->
+  
+  
+          </nav>
+  
+          <ul class="utill">
+            <li class="search-btn"><a href="#"><img src="../img/sub_header_icon/sub_search.png" alt="검색창 열기"></a></li>
+            <li class="globe-btn"><a href="#"><img src="../img/sub_header_icon/sub_globe.png" alt="영어 사이트"></a></li>
+            <li class="ham-btn"><a href="#"><img src="../img/sub_header_icon/sub_ham_menu.png" alt="메뉴 열기"></a></li>
+          </ul><!--.utill-->
+        </div><!--.inner-->
+      </header>
+
+      <!-- 타이틀 영역 -->
+      <div id="tit">
+        <div class="inner">
+          <h2>JEJU</h2>
+        </div><!--.inner-->
+      </div><!--#tit-->
+
+      <!-- 전시작품 리스트 -->
+      <div id="exh-list">
+        <div class="inner">
+
+          <ul>
+            <li>
+              
+              <div class="exh-txt">
+                <h4>아름다운 정령이 살아 숨 쉬는 신성한 숲</h4>
+                <p class="kor">
+                  누구의 손도 닿지 않은 신성한 숲에서 신비로운 정령을 <br>만난다. 수(水)·풍(風)·지(地)·화(火)를 상징하는 <br>정령들은 숲을 거닐며 치유와 회복의 기운을 선사한다.
+                </p>
+    
+                <p class="eng">
+                  SACRED FOREST OF MYSTIC SPIRITS <br>
+    
+                  Meet the mystical spirits living in this sacred <br>and untouched forest. <br>Stroll through the land of healing and restoration, protected <br>by the spirits of water, wind, earth, and fire.
+    
+                 </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>CLOUD</h4>
+                <p class="kor">
+                  다양한 구름이 만들어내는 환상적인 해변. <br>
+                  빛을 머금은 아름다운 구름은 끊임없이 모양을 바꿔가며 <br>찬란한 색을 더해 끝없이 펼쳐진 신비로운 해변의 모습을 선사한다.
+                </p>
+    
+                <p class="eng">
+                  CLOUD <br>
+    
+                  Catch a glimpse of this magnificent beach created <br>by an abundance of ever-changing and luminous clouds. <br>Its spectacular beauty goes beyond the horizon.
+    
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>제주를 담은 빛의 정원</h4>
+                <p class="kor">
+                  제주의 바람 소리를 들으며 햇살 가득한 숲길을 걷고<br>
+                  현대 건축물 속에서 보이는 제주의 풍경과<br>
+                  제주의 살아있는 자연을 그린 작품(홍일화 作)을 감상하며 <br>
+                  새롭게 해석된 상상 속 제주의 모습을 만난다.
+                </p>
+    
+                <p class="eng">
+                  Jeju Island in the Garden of Light <br>
+    
+                  Strolling sunlit paths while listening to the Island's whispers,<br>
+                  Enjoying Jeju’s scenery through contemporary architecture,<br>
+                  And Il-hwa Hong's depictions of its vibrant nature,<br>
+                  One discovers a new Jeju in imagination.
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>꽃의 서사시</h4>
+                <p class="kor">
+                  꽃이 피어나며 아름다워지는 섬세한 과정을 타임랩스로 연출한 공간. <br>
+                  꽃잎의 잔상과 대비되는 컬러를 통해 꽃의 히스토리를  <br>새로운 시각으로 만난다. <br>
+                  점점 명확해지는 꽃 한송이가 공간을 새롭게 바꾼다.
+                </p>
+    
+                <p class="eng">
+                  An epic of flower <br>
+    
+                  You can visually witness the epic-like every moment <br>
+                  of a flower’s life from bud to beautiful bloom in time-lapse <br>
+                  in the' FLOWER' zone. The contrasting color of the petals will <br>
+                  lead you to a new perspective on the flower's life. <br>
+                  As a flower gradually becomes more apparent, <br>
+                  the area evolves into a completely different space.
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>BAMBOO FOREST</h4>
+                <p class="kor">
+                  안개가 자욱이 낀 첩첩산중에 우거진 낯설고도 매혹적인 대나무 숲. <br>
+                  직접 색을 입힌 신비한 생명들이 하나 둘 씩 깨어나 <br>
+                  환상적인 모험을 떠난다.
+                </p>
+    
+                <p class="eng">
+                  BAMBOO FOREST <br>
+    
+                  Enter a mystical bamboo forest shrouded in foggy mountains. <br>
+                  Witness mysterious creatures awaking and embarking on a fantastical journey,  <br>
+                  each one with its own unique color and character.  <br>
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>명화를 담은 빛의 정원</h4>
+                <p class="kor">
+                  르네상스부터 상징주의까지 <br>
+                  서양미술사를 대표하는 거장들의 작품 속에서 <br>
+                  예술적 사색의 순간을 경험한다.
+                </p>
+    
+                <p class="eng">
+                  LIGHT OF MASTERPIECES <br>
+    
+                  Experience the moments of artistic reflection through the works <br>
+                  of represented masters in western art history <br>
+                  from Renaissance to Symbolism.<br>
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>시간을 담은 빛, 방의걸</h4>
+                <p class="kor">
+                  모든 색을 품은 검은 먹빛의 공간에서 <br>
+                  시간이 만든 아름다운 자연 속에 머물며, <br>
+                  저마다의 심상으로 확장된 공간을 경험한다. <br>
+                </p>
+    
+                <p class="eng">
+                  Light in Time, Bang Ui-Geol <br>
+    
+                  Within an ink-shade space that embraces all colors,<br>
+                  stay in the beautiful nature created by time<br>
+                  and experience the garden expanded by your imagination.
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>명화를 담은 빛의 정원</h4>
+                <p class="kor">
+                  르네상스부터 상징주의까지 <br>
+                  서양미술사를 대표하는 거장들의 작품 속에서 <br>
+                  예술적 사색의 순간을 경험한다.
+                </p>
+    
+                <p class="eng">
+                  LIGHT OF MASTERPIECES <br>
+    
+                  Experience the moments of artistic reflection through the works <br>
+                  of represented masters in western art history <br>
+                  from Renaissance to Symbolism.<br>
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>달빛을 머금은 달토끼와의 만남</h4>
+                <p class="kor">
+                  달빛을 머금은 공 속에 숨은 달 토끼와의 만남. <br>
+                  달 속에 앉아 있는 4M 크기의 초대형 토끼가 <br>
+                  함께 놀아줄 친구를 기다린다.<br>
+                  거울로 무한히 확장된 공들 속에서 형형색색 바뀌는 <br>
+                  달빛 속에 숨은 달토끼를 찾아 나선다.
+                </p>
+    
+                <p class="eng">
+                  Meeting with the Moon Rabbit <br>under the Moonlight <br>
+    
+                  Meet the moon rabbit hiding inside a ball full of moonlight. <br>
+                  The gigantic 4-meter tall moon rabbit is waiting <br>
+                  for a friend to play with inside the moon. <br>
+                  In the pool of color-changing myriad moonlight balls infinitely expanded by mirrors, <br>
+                  set out to find the hidden lonely moon rabbit.
+    
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+          </ul>
+        </div><!--.inner-->
+        
+
+
+      </div><!--#exh-list-->
+
+      <!-- 텍스트 흐르는 효과 -->
+      <div id="marquee-wrap">
+
+        <div class="marquee">
+
+            <div class="loop-container">
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+          </div><!--.loop-container-->  
+          
+        </div><!--.marquee-->
+
+      </div><!--.marquee-wrap-->
+
+      <div id="location">
+        <div class="inner">
+
+          <div class="location-txt">
+            <h2>LOCATION</h2>
+            <div class="l-right">
+              <div class="address">
+                <img src="../img/sub_place/location_icon.png" alt="주소">
+                <span>제주 제주시 애월읍 어림비로 478 어음리 1503</span>
+              </div>
+              <div class="phone">
+                <img src="../img/sub_place/phone_icon.png" alt="전화번호">
+                <span>1899-5008</span>
+              </div>
+            </div>
+          </div><!--.location-txt-->
+          
+          <div id="map-wrap">
+            <div id="map"></div>
+          </div>
+
+
+        </div><!--.inner-->
+      </div><!-- #location -->
+
+      <!-- 푸터 -->
+      <footer>
+        <div class="inner">
+          <div class="foot-logo-wrap">
+            <img src="../img/icon/footer_logo.png" alt="아르떼뮤지엄" class="foot-logo">
+          </div>
+
+          <div class="foot-info">
+            <span><a href="#">개인정보처리방침</a></span>
+            <span><a href="#">영상처리기기운영방침</a></span>
+
+            <address>
+              주관, 제작 | district company &nbsp;&nbsp;&nbsp;    
+              후원 | 문화체육관광부  한국콘텐츠진흥원 <br>
+              Contact | artemuseum@district.com &nbsp;&nbsp;&nbsp; 사업자 번호 | 395-88-02020
+            </address>
+
+            <p>Copyright ⓒ 2024 Artemuseum  ALL rights reserved.</p>
+
+          </div><!--.foot-info-->
+
+          <div class="sns">
+            <a href="https://www.facebook.com/ARTEMUSEUM.KOREA" target="_blank"><img src="../img/icon/footer_facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/artemuseum_jeju/?hl=ko" target="_blank"><img src="../img/icon/footer_insta.png" alt="인스타"></a>
+            <a href="https://pf.kakao.com/_LZHVK" target="_blank"><img src="../img/icon/footer_kakaotalk.png" alt="카카오톡"></a>
+          </div><!--.sns-->
+        </div><!--.inner-->
+      
+      </footer>
+
+
+      <!--맵 API 자바스크립트-->
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e1c40dbfa2cce8917e98343a959508de"></script>
+
+      <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+              center: new kakao.maps.LatLng(33.3966980434599, 126.344975902836), // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+        };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(33.3966980434599,  126.344975902836); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+              
+
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        var zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        
+      </script>
+
+
+
+    </div><!--#wrap-->
+
+  
+</body>
+</html>

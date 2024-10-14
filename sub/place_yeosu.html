@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YEOSU</title>
+    <!--favicon-->
+    <link rel="icon" href="../img/favicon_arte.ico">
+
+    <!--font-->
+    <link rel="stylesheet" href="../css/font.css">  
+  
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage.../css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/common_sub.css">
+    <link rel="stylesheet" href="../css/place/place_jeju.css">
+    <link rel="stylesheet" href="../css/place/place_yeosu.css">
+  
+    <!--js-->
+    <script defer src="../js/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/jquery.fullPage.js"></script>
+    <script defer src="../js/swiper-bundle.min.js"></script>
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/marquee.js"></script>
+  
+</head>
+<body>
+
+    <!-- 검색창 -->
+    <div id="search-bar">
+      <div class="search">
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div>
+              <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요" autofocus>
+            </div>
+          </fieldset>
+        </form>
+  
+        <div class="search-close"><img src="../img/icon/search_close.png" alt="검색창닫기"></div>
+  
+      </div><!--.search-->
+    </div><!--#search-bar-->
+  
+  
+    <!-- 티켓 구매 링크-->
+    <div class="ticket-btn">
+      <a href="https://tickets.interpark.com/contents/search?n_media=27758&n_ad_group=grp-a001-01-000000025867781&n_ad=nad-a001-01-000000241192744&n_rank=1&n_ad_group_type=1&n_match=1&NaPm=ct%3Dm18vg4a8%7Cci%3D0z00001cIYHAB9NFo1kW%7Ctr%3Dsa%7Chk%3Dd017468e638fc5d97e84cae53aff5aa17b3c5945%7Cnacn%3Dz3WyBMgZzeR5B&utm_campaign=ticket_leisure_20210617_pc_cpc_paidsearch&utm_term=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_source=naver&utm_medium=cpc&keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84&n_keyword=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&n_campaign_type=1&n_query=%EC%95%84%EB%A5%B4%EB%96%BC%EB%AE%A4%EC%A7%80%EC%97%84%ED%8B%B0%EC%BC%93&utm_content=consider_34&n_keyword_id=nkw-a001-01-000004482302227" target="_blank"><img src="../img/icon/TICKET_fixed.png" alt="티켓구매하기"></a>
+    </div><!--.ticket-btn-->
+
+
+
+    <div id="wrap">
+      <!-- 헤더 -->
+      <header>
+        <div class="inner">
+          <h1><a href="../index.html"><img src="../img/sub_header_icon/sub_logo.png" alt="아르떼뮤지엄"></a></h1>
+  
+          <nav>
+            <ul class="gnb">
+              <li><a href="../index.html#menu1">About</a></li>
+              <li><a href="../index.html#menu2">Exhibition</a></li>
+              <li><a href="#">Place</a>
+                <ul class="gnb-2depth">
+                  <li><a href="../sub/place_jeju.html">JEJU</a></li>
+                  <li><a href="../sub/place_yeosu.html">YEOUSU</a></li>
+                  <li><a href="../sub/place_gangneung.html">GANGNEUNG</a></li>
+                  <li><a href="../sub/place_busan.html">BUSAN</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Info</a>
+                <ul class="gnb-2depth">
+                  <li><a href="../sub/info_event.html">EVENT</a></li>
+                  <li><a href="../sub/info_faq.html">FAQ</a></li>
+                </ul>
+              </li>
+            </ul><!--.gnb-->
+  
+            <div class="m-gnb-wrap">
+              <ul class="m-gnb">
+  
+                <li><a href="../index.html#menu1">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>About</span>
+                </a></li>
+  
+                <li><a href="../index.html#menu2">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Exhibition</span>
+                </a></li>
+  
+                <li><a href="#">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Place</span>
+                </a>
+                  <ul class="m-gnb-2depth">
+                    <li><a href="../sub/place_jeju.html">JEJU</a></li>
+                    <li><a href="../sub/place_yeosu.html">YEOUSU</a></li>
+                    <li><a href="../sub/place_gangneung.html">GANGNEUNG</a></li>
+                    <li><a href="../sub/place_busan.html">BUSAN</a></li>
+                  </ul>
+                </li>
+  
+                <li><a href="#">
+                  <img src="../img/icon/m_ham_hover.png" alt="아이콘">
+                  <span>Info</span>
+                </a>
+                  <ul class="m-gnb-2depth">
+                    <li><a href="../sub/info_event.html">EVENT</a></li>
+                    <li><a href="../sub/info_faq.html">FAQ</a></li>
+                  </ul>
+                </li>
+              </ul><!--.m-gnb-->
+  
+              <div class="m-logo">
+                <img src="../img/icon/m_ham_logo.png" alt="아르떼뮤지엄">
+              </div>
+              <div class="m-gnb-close">
+                <img src="../img/icon/m-gnb-close.png" alt="메뉴닫기">
+              </div>
+              
+           </div><!--.m-gnb-wrap -->
+  
+  
+          </nav>
+  
+          <ul class="utill">
+            <li class="search-btn"><a href="#"><img src="../img/sub_header_icon/sub_search.png" alt="검색창 열기"></a></li>
+            <li class="globe-btn"><a href="#"><img src="../img/sub_header_icon/sub_globe.png" alt="영어 사이트"></a></li>
+            <li class="ham-btn"><a href="#"><img src="../img/sub_header_icon/sub_ham_menu.png" alt="메뉴 열기"></a></li>
+          </ul><!--.utill-->
+        </div><!--.inner-->
+      </header>
+
+      <!-- 타이틀 영역 -->
+      <div id="tit">
+        <div class="inner">
+          <h2>YEOSU</h2>
+        </div><!--.inner-->
+      </div><!--#tit-->
+
+      <!-- 전시작품 리스트 -->
+      <div id="exh-list">
+        <div class="inner">
+
+          <ul>
+            <li>
+              
+              <div class="exh-txt">
+                <h4>오션, 여수가 꿈꾸는 바다</h4>
+                <p class="kor">
+                  거대한 고래와 신비로운 바다 생명체가 만들어내는 <br> 아름다운 장관,
+                  여수의 바다와 절경을 오롯이 담아낸 <br>꿈에 그리던 환상적인 바다여행을 시작한다.
+                </p>
+    
+                <p class="eng">
+                  OCEAN, YEOSU'S DREAM <br>
+    
+                  A beautiful spectacle created by giant whales <br> and mysterious sea creatures. <br>
+                  The fantastic sea journey you’ve always dreamed  <br>of begins with beautiful Yeosu’s sea and superb view.
+    
+                 </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>CLOUD</h4>
+                <p class="kor">
+                  다양한 구름이 만들어내는 환상적인 해변. <br>
+                  빛을 머금은 아름다운 구름은 끊임없이 모양을 바꿔가며 <br>찬란한 색을 더해 끝없이 펼쳐진 신비로운 해변의 모습을 선사한다.
+                </p>
+    
+                <p class="eng">
+                  CLOUD <br>
+    
+                  Catch a glimpse of this magnificent beach created <br>by an abundance of ever-changing and luminous clouds. <br>Its spectacular beauty goes beyond the horizon.
+    
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>강하면서도 유연한 신비로운 메탈 폭포</h4>
+                <p class="kor">
+                    차갑고 단단한 고체가 유기적으로 움직이며 만들어내는 <br>메탈폭포는 살아있는 생명체처럼 보이기도 한다.<br>
+                    신비로운 움직임과 색채가 현실에선 경험할 수 없는 <br>초현실적 공간을 만들어낸다.
+                </p>
+    
+                <p class="eng">
+                  Feel the power of a flexible and mysterious metal waterfall.  <br>
+    
+                  This metallic waterfall looks like a lifeform created <br>by the movement of cold, hard solids. <br> Fantastical movements and colors create a surreal space <br>that transcends reality.
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>생명의 순환과 사랑의 상징 동백</h4>
+                <p class="kor">
+                  바람이 차가워진 즈음 피어나는 꽃 동백은 향기가 없는 대신 <br>그 빛으로 동박새를 유인하여 꽃봉우리를 틔운다. <br>
+                  가장 화려하게 꽃을 피운 뒤 꽃봉우리째 떨어지는 동백을 통해 <br>서정적인 생명의 덧없는 아름다움을 느껴본다.
+                </p>
+    
+                <p class="eng">
+                  MEET THE FLOWER OF LOVE AND THE CYCLE OF LIFE <br>
+    
+                  Camellia blooms when the wind cools. It has no scent, <br>but its radiance allures the Chickadees to help the flower bloom. <br> Once they reach the most exquisite flowering state, <br>the camellia in full bloom falls as it is. <br>Feel the beauty of their vibrant and poetic life, <br>which resembles the lyrical and exquisite beauty of ours.
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>에메랄드빛 바닷속에서 마주친 <br>거대한 플라밍고 튜브</h4>
+                <p class="kor">
+                  모두가 유유자적 떠다니는 깊은 바닷속, <br>
+                  길을 잃은 튜브는 누군가를 찾는 듯 가라앉은 <br>그 자리에 머물러 있다.
+                </p>
+    
+                <p class="eng">
+                  GIANT FLAMINGO TUBES BENEATH THE EMERALD SEA <br>
+    
+                  Behold the giant flamingo tubes beneath the emerald sea. <br>
+                  While everyone else idly floats by,<br> these tubes appear lost in the depths, <br>as if searching for
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>오션, 여수가 꿈꾸는 바다</h4>
+                <p class="kor">
+                  거대한 고래와 신비로운 바다 생명체가 만들어내는 <br> 아름다운 장관,
+                  여수의 바다와 절경을 오롯이 담아낸 <br>꿈에 그리던 환상적인 바다여행을 시작한다.
+                </p>
+    
+                <p class="eng">
+                  OCEAN, YEOSU'S DREAM <br>
+    
+                  A beautiful spectacle created by giant whales <br> and mysterious sea creatures. <br>
+                  The fantastic sea journey you’ve always dreamed  <br>of begins with beautiful Yeosu’s sea and superb view.
+    
+                 </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>명화를 담은 빛의 정원</h4>
+                <p class="kor">
+                  르네상스부터 상징주의까지 <br>
+                  서양미술사를 대표하는 거장들의 작품 속에서 <br>
+                  예술적 사색의 순간을 경험한다.
+                </p>
+    
+                <p class="eng">
+                  LIGHT OF MASTERPIECES <br>
+    
+                  Experience the moments of artistic reflection through the works <br>
+                  of represented masters in western art history <br>
+                  from Renaissance to Symbolism.<br>
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>WISTERIA</h4>
+                <p class="kor">
+                  ’환영‘이라는 꽃말을 가진 등나무 꽃이 흩날리는 <br> 꽃잎과 달콤한 향으로 나를 반긴다. 
+                  빛으로 만들어진 등나무 꽃은 <br>시간의 흐름에 따라 시시각각 새로운 컬러로 변하며,<br>
+                  현실에 없는 듯한 신비롭고 무한한 공간을 만들어 낸다.<br>
+                  흐드러지는 등나무 꽃비를 맞으며 잊을 수 없는 <br>찰나를 간직하고 추억한다.
+                </p>
+    
+                <p class="eng">
+                  LIGHT OF MASTERPIECES <br>
+    
+                  Experience the moments of artistic reflection through the works <br>
+                  of represented masters in western art history <br>
+                  from Renaissance to Symbolism.<br>
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+  
+  
+            <li>
+              <div class="exh-txt">
+                <h4>불꽃이 베일을 벗긴 로맨틱 모멘트.</h4>
+                <p class="kor">
+                  구름과 대지 사이로 내리친 번개는 미지의 공간을 밝힌다. <br> 핑크빛 구름과 다채로운 컬러의 생명체들이 <br>어우러진 몽환적인 세상이 펼쳐진다.
+    
+                <p class="eng">
+                  A ROMANTIC MOMENT UNVEILED BY FIREWORKS <br>
+    
+                  When lightning strikes from the clouds to the earth, <br>it illuminates a mysterious world unknown. <br>A surreal landscape unfolds, where pink clouds intermingle <br>with colorful creatures in a seamless symphony.
+    
+                </p>
+              </div>
+
+              <div class="exh-bg"></div>
+            </li>
+  
+          </ul>
+        </div><!--.inner-->
+        
+
+
+      </div><!--#exh-list-->
+
+      <!-- 텍스트 흐르는 효과 -->
+      <div id="marquee-wrap">
+
+        <div class="marquee">
+
+            <div class="loop-container">
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+              <div class="item">
+                <span>EXTERNAL NATURE</span>
+              </div>
+          </div><!--.loop-container-->  
+          
+        </div><!--.marquee-->
+
+      </div><!--.marquee-wrap-->
+
+      <div id="location">
+        <div class="inner">
+
+          <div class="location-txt">
+            <h2>LOCATION</h2>
+            <div class="l-right">
+              <div class="address">
+                <img src="../img/sub_place/location_icon.png" alt="주소">
+                <span>전남 여수시 박람회길 1 국제관 A동 3층</span>
+              </div>
+              <div class="phone">
+                <img src="../img/sub_place/phone_icon.png" alt="전화번호">
+                <span>1899-5008</span>
+              </div>
+            </div>
+          </div><!--.location-txt-->
+          
+          <div id="map-wrap">
+            <div id="map"></div>
+          </div>
+
+
+        </div><!--.inner-->
+      </div><!-- #location -->
+
+      <!-- 푸터 -->
+      <footer>
+        <div class="inner">
+          <div class="foot-logo-wrap">
+            <img src="../img/icon/footer_logo.png" alt="아르떼뮤지엄" class="foot-logo">
+          </div>
+
+          <div class="foot-info">
+            <span><a href="#">개인정보처리방침</a></span>
+            <span><a href="#">영상처리기기운영방침</a></span>
+
+            <address>
+              주관, 제작 | district company &nbsp;&nbsp;&nbsp;    
+              후원 | 문화체육관광부  한국콘텐츠진흥원 <br>
+              Contact | artemuseum@district.com &nbsp;&nbsp;&nbsp; 사업자 번호 | 395-88-02020
+            </address>
+
+            <p>Copyright ⓒ 2024 Artemuseum  ALL rights reserved.</p>
+
+          </div><!--.foot-info-->
+
+          <div class="sns">
+            <a href="https://www.facebook.com/ARTEMUSEUM.KOREA" target="_blank"><img src="../img/icon/footer_facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/artemuseum_jeju/?hl=ko" target="_blank"><img src="../img/icon/footer_insta.png" alt="인스타"></a>
+            <a href="https://pf.kakao.com/_LZHVK" target="_blank"><img src="../img/icon/footer_kakaotalk.png" alt="카카오톡"></a>
+          </div><!--.sns-->
+        </div><!--.inner-->
+      
+      </footer>
+
+
+      <!--맵 API 자바스크립트-->
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e1c40dbfa2cce8917e98343a959508de"></script>
+
+      <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+              center: new kakao.maps.LatLng(34.7509493146231, 127.747091095943), // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+        };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(34.7509493146231,  127.747091095943); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+              
+
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        var zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        
+      </script>
+
+
+
+    </div><!--#wrap-->
+
+  
+</body>
+</html>

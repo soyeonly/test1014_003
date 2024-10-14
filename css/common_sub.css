@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+
+/* ----------공통 -----------*/
+#wrap{
+  min-width: 320px;
+  position: relative;
+}
+.inner{
+  max-width: 1400px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+/* ------------search - bar------------- */
+#search-bar{
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  padding: 60px 0;
+  z-index: 999999;
+
+  position: relative;
+}
+#search-bar .search{
+  position: absolute;
+  top : 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+#search-bar .search-close{
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+#search-bar .search-close img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#search-bar .search form{
+  width: 100%;
+  height: 50px;
+}
+#search-bar .search input[type="text"]{
+  line-height: 50px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 0 180px 0 20px;
+}
+
+
+
+
+/* ---------- ticket-btn ------------- */
+.ticket-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99999999999;
+  transform: scale(0.7);
+}
+
+
+
+
+
+
+
+
+
+/* ------------ header -------------- */
+header{
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding-top: 20px;
+}
+header .inner{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+header h1{
+  opacity: 0.9;
+}
+header .gnb{
+  width: 750px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 80px;
+}
+header .gnb > li{
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 0 30px;
+  font-size: 2rem;
+  position: relative;
+  border-radius: 80px;
+
+  transition: background-color 0.5s;
+}
+header .gnb > li > a{
+  color: #000;
+  line-height: 50px;
+
+  transition: color 0.5s;
+}
+
+
+header .gnb > li:hover{
+  background-color: #000;
+}
+header .gnb > li:hover > a{
+  color: #fff;
+}
+
+
+
+
+
+header .gnb .gnb-2depth{
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  background-color: #000;
+  border-radius: 25px;
+  padding: 15px;
+}
+header .gnb .gnb-2depth > li{
+  margin-bottom: 10px;
+}
+header .gnb .gnb-2depth > li:last-child{
+  margin-bottom: 0;
+}
+header .gnb .gnb-2depth > li > a{
+  color: #999;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+header .gnb .gnb-2depth > li:hover > a{
+  color: #fff;
+}
+
+
+header .utill{
+  display: flex;
+  gap: 10px;
+  opacity: 0.8;
+}
+header .utill .ham-btn{
+  display: none;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+header .m-gnb-wrap{
+  display: none;
+
+  padding: 80px 0;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9999;
+}
+header .m-gnb{
+  margin-top: 70px;
+}
+
+header .m-gnb > li > a {
+  position: relative;
+}
+header .m-gnb > li > a img{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: scale(0.5);
+  transform: translateY(-75%);
+  
+  display: none;
+}
+
+header .m-gnb > li > a span {
+  display: inline-block;
+  padding: 10px 10%;
+  width: 100%;
+  color: #000;
+  font-size: 5rem;
+
+  transition: background-color 0.3s, color 0.3s, padding-left 0.3s;
+}
+
+header .m-gnb > li:hover > a span{
+  background-color: #000;
+  padding-left: 15%;
+  color: #fff;
+}
+header .m-gnb > li:hover > a img{
+  display: block;
+}
+
+header .m-logo{
+  position: absolute;
+  transform: scale(0.8);
+  top: 50px;
+  left: 10%;
+}
+header .m-gnb-close{
+  position: absolute;
+  top: 60px;
+  right: 10%;
+  transform: scale(0.7);
+  cursor: pointer;
+}
+header .m-gnb-2depth{
+  padding: 15px 15%;
+} 
+header .m-gnb-2depth > li{
+  margin-bottom: 15px;
+}
+header .m-gnb-2depth > li:last-child{
+  margin-bottom: 0;
+}
+header .m-gnb-2depth > li > a{
+  color: #777;
+  font-size: 3rem;
+  display: block;
+
+  transition: color 0.3;
+}
+header .m-gnb-2depth > li:hover > a{
+  color: #000;
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width : 1080px) {
+  
+  header .gnb{
+    display: none;
+  }
+  header .utill .ham-btn,
+  header .m-gnb-wrap{
+    display: block;
+  }
+
+  header h1 img{
+    transform: scale(0.7);
+  }
+
+}
+
+
+
+
+
+
+
+/*-------------footer---------------*/
+footer{
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0 120px 0;
+  z-index: 9999999;
+}
+footer .inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .foot-logo{
+  transform: scale(0.7);
+}
+footer .foot-info{
+  font-family: "Noto Sans KR", sans-serif;;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+footer .foot-info span{
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+
+  transition: background-color 0.5s;
+}
+footer .foot-info span a{
+  font-weight: 300;
+  color: #fff;
+
+  transition: color 0.5s, font-weight 0.5s;
+}
+footer .foot-info span:hover{
+  background-color: #fff;
+}
+footer .foot-info span:hover a{
+  font-weight: 500;
+  color: #000;
+}
+footer .foot-info address{
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+footer .foot-info p{
+  font-weight: 300;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+
+footer .sns img{
+  transform: scale(0.8);
+  margin-left: -10px;
+  
+}
+
+
+/* 모바일 */
+@media screen and (max-width : 1080px) {
+  footer{
+    text-align: center;
+    margin: 0 auto;
+  }
+  footer .inner{
+    display: block;
+  }
+  footer .foot-logo-wrap{
+    width: 100%;
+  }
+  footer .foot-logo-wrap .foot-logo{
+    text-align: center;
+  }
+  footer .foot-info{
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  footer .sns{
+    display: block;
+    width: 100%;
+  }
+}

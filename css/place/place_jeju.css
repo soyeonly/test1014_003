@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/*-----------타이틀영역--------------- */
+#tit{
+  width: 100%;
+  padding: 120px 0;
+  text-align: center;
+}
+#tit h2{
+  font-size: 10rem;
+  font-weight: normal;
+}
+
+/* 모바일 */
+
+@media screen and (max-width : 1080px) {
+  #tit h2{
+    font-size: 7rem;
+  }
+}
+
+
+
+
+
+
+
+
+/*-----------전시 리스트--------------- */
+#exh-list{
+  padding-top: 50px;
+  padding-bottom: 150px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;;
+}
+#exh-list ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#exh-list ul li{
+  width: calc((100% - 40px) / 3);
+  height: 350px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+#exh-list ul li:nth-child(1){
+  background: url(../../img/sub_place/jeju/jeju_01.jpg) no-repeat center / cover;
+}
+#exh-list ul li:nth-child(2){
+  background: url(../../img/sub_place/jeju/jeju_02.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(3){
+  background: url(../../img/sub_place/jeju/jeju_03.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(4){
+  background: url(../../img/sub_place/jeju/jeju_04.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(5){
+  background: url(../../img/sub_place/jeju/jeju_05.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(6){
+  background: url(../../img/sub_place/jeju/jeju_06.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(7){
+  background: url(../../img/sub_place/jeju/jeju_07.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(8){
+  background: url(../../img/sub_place/jeju/jeju_08.jpg)no-repeat center / cover;
+}
+#exh-list ul li:nth-child(9){
+  background: url(../../img/sub_place/jeju/jeju_09.jpg)no-repeat center / cover;
+}
+
+#exh-list ul li .exh-txt{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#exh-list ul li .exh-bg{
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s;
+}
+
+#exh-list ul li:hover .exh-bg{
+  background-color: #fff;
+}
+
+
+
+.exh-txt h4{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.exh-txt .kor{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+}
+.exh-txt .eng{
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.exh-txt{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#exh-list ul li:hover .exh-txt{
+  opacity: 1;
+}
+
+/* 모바일 */
+@media screen and (max-width : 1080px){
+  #exh-list ul li{
+    width: 100%;
+  }
+}
+
+
+
+
+/* -------마퀴 텍스트----------- */
+#marquee-wrap{
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.marquee {
+  position: relative;
+  overflow: hidden;
+  font: 500 5vw/1 "Belleza",sans-serif;
+  min-height: 50vh;
+  font-weight: 500;
+}
+
+.loop-container .item{
+  padding: 15px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.loop-container .item span{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* 모바일 */
+@media screen and(max-width:1080px) {
+  #marquee-wrap{
+    height: 150px;
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* -----------------------로케이션--------------------------- */
+#location {
+  width: 100%;
+}
+#location .location-txt{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#location .location-txt .l-right{
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-right: 10px;
+}
+#location .location-txt h2{
+  font-size: 6.5rem;
+  font-weight: normal;
+}
+
+#location .location-txt .address span,
+#location .location-txt .phone span{
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 30px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+#location .location-txt .address img,
+#location .location-txt .phone img{
+  transform: scale(0.7);
+}
+
+
+#map-wrap{
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 250px;
+  border: 1px solid #000;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#map{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 250px;
+  
+}
+
+
+/* 모바일 */
+@media screen and (max-width:1080px) {
+  #location .location-txt .l-right{
+    width: 100%;
+    gap: 0px;
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #location .location-txt h2{
+    width: 100%;
+    text-align: center;
+  }
+  #location .location-txt .address{
+    margin-bottom: 10px;
+  }
+  #location .location-txt .address,
+  #location .location-txt .phone{
+    width: 100%;
+    padding: 0;
+  }
+
+  #map-wrap{
+    height: 350px;
+  }
+  #map{
+    height: 350px;
+  }
+
+}
