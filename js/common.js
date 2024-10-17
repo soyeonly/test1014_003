@@ -26,7 +26,7 @@ $(document).ready(function(){ //실행틀 시작
 
 
     //모바일메뉴
-    $(".m-ham").click(function(){
+    $(".ham-btn").click(function(){
       $(".m-gnb-wrap").animate({ "left" : "0" });
     });
   
